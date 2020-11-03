@@ -1,0 +1,26 @@
+mcaarni@melkki:~$ tree kurssit
+kurssit
+└── ot2020
+    └── viikko 1
+        ├── temp
+        │   └── Unicafe
+        └── Unicafe
+            ├── pom.xml
+            └── src
+                ├── main
+                │   └── java
+                │       └── com
+                │           └── mycompany
+                │               └── unicafe
+                │                   ├── Kassapaate.java
+                │                   ├── Maksukortti.java
+                │                   └── Paaohjelma.java
+                └── test
+                    └── java
+                        └── com
+                            └── mycompany
+                                └── unicafe
+                                    └── MaksukorttiTest.java
+
+16 directories, 5 files
+mcaarni@melkki:~$cd
