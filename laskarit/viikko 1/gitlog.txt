@@ -1,0 +1,306 @@
+mcaarni@Muru:~$ ls
+ot_viikko1
+mcaarni@Muru:~$ cd ot_viikko1/
+mcaarni@Muru:~/ot_viikko1$ ls
+kolmas.txt  stuff  tiedosto.txt  toinen.txt
+mcaarni@Muru:~/ot_viikko1$ rm toinen.txt
+mcaarni@Muru:~/ot_viikko1$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    toinen.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+mcaarni@Muru:~/ot_viikko1$ git rm
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+
+mcaarni@Muru:~/ot_viikko1$ git rm
+kolmas.txt    stuff/        tiedosto.txt  toinen.txt
+mcaarni@Muru:~/ot_viikko1$ git rm
+kolmas.txt    stuff/        tiedosto.txt  toinen.txt
+mcaarni@Muru:~/ot_viikko1$ git rm toinen.txt
+rm 'toinen.txt'
+mcaarni@Muru:~/ot_viikko1$ git commit -m "toisen poisto"
+[master eb5e3ee] toisen poisto
+ 1 file changed, 4 deletions(-)
+ delete mode 100644 toinen.txt
+mcaarni@Muru:~/ot_viikko1$ git status
+On branch master
+nothing to commit, working tree clean
+mcaarni@Muru:~/ot_viikko1$ mv tiedosto.txt eka.txt
+mcaarni@Muru:~/ot_viikko1$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    tiedosto.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        eka.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+mcaarni@Muru:~/ot_viikko1$ git add eka.txt
+mcaarni@Muru:~/ot_viikko1$ git commit -m "nimen muutos"
+[master 8541af7] nimen muutos
+ 1 file changed, 4 insertions(+)
+ create mode 100644 eka.txt
+mcaarni@Muru:~/ot_viikko1$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    tiedosto.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+mcaarni@Muru:~/ot_viikko1$ git rm tiedosto.txt
+rm 'tiedosto.txt'
+mcaarni@Muru:~/ot_viikko1$ git commit -m "nimen muutos2"
+[master 17015ee] nimen muutos2
+ 1 file changed, 4 deletions(-)
+ delete mode 100644 tiedosto.txt
+mcaarni@Muru:~/ot_viikko1$ nano eka.txt
+mcaarni@Muru:~/ot_viikko1$ nano kolmas.txt
+mcaarni@Muru:~/ot_viikko1$ nano eka.txt
+mcaarni@Muru:~/ot_viikko1$ git add -p
+diff --git a/eka.txt b/eka.txt
+index db252e1..f91b2cd 100644
+--- a/eka.txt
++++ b/eka.txt
+@@ -1,4 +1,7 @@
+ Ohjelmistotekniikan kurssi
+-Tama
+-on
++Tam
+ ohjelmointia
++ja
++
++kaikkea muuta
++kivaa
+(1/1) Stage this hunk [y,n,q,a,d,s,e,?]? y
+
+diff --git a/kolmas.txt b/kolmas.txt
+index 531da49..059d328 100644
+--- a/kolmas.txt
++++ b/kolmas.txt
+@@ -1,5 +1,8 @@
+ ABC
+ CBA
+ jfkdlsöh
++
+ 4. rivi
++En tieda
+
++mita oikein teen
+(1/1) Stage this hunk [y,n,q,a,d,s,e,?]? y
+
+mcaarni@Muru:~/ot_viikko1$ git commit -m "lisää muutoksia tiedostoihin"
+[master afd95f7] lisää muutoksia tiedostoihin
+ 2 files changed, 8 insertions(+), 2 deletions(-)
+mcaarni@Muru:~/ot_viikko1$ nano eka.txt
+mcaarni@Muru:~/ot_viikko1$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   eka.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+mcaarni@Muru:~/ot_viikko1$ git restore eka.txt
+mcaarni@Muru:~/ot_viikko1$ git status
+On branch master
+nothing to commit, working tree clean
+mcaarni@Muru:~/ot_viikko1$ nano eka.txt
+mcaarni@Muru:~/ot_viikko1$ nano kolmas.txt
+mcaarni@Muru:~/ot_viikko1$ git add kolmas.txt
+mcaarni@Muru:~/ot_viikko1$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   kolmas.txt
+
+mcaarni@Muru:~/ot_viikko1$ git restore --staged kolmas.txt
+mcaarni@Muru:~/ot_viikko1$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   kolmas.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+mcaarni@Muru:~/ot_viikko1$ git restore kolmas.txt
+mcaarni@Muru:~/ot_viikko1$ git status
+On branch master
+nothing to commit, working tree clean
+mcaarni@Muru:~/ot_viikko1$ mkdir tiedostoja
+mcaarni@Muru:~/ot_viikko1$ ls
+eka.txt  kolmas.txt  stuff  tiedostoja
+mcaarni@Muru:~/ot_viikko1$ ls
+eka.txt  kolmas.txt  stuff  tiedostoja
+mcaarni@Muru:~/ot_viikko1$ cd tiedostoja/
+mcaarni@Muru:~/ot_viikko1/tiedostoja$ touch file1 file2 file3
+mcaarni@Muru:~/ot_viikko1/tiedostoja$ ls
+file1  file2  file3
+mcaarni@Muru:~/ot_viikko1/tiedostoja$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+mcaarni@Muru:~/ot_viikko1/tiedostoja$ cd ..
+mcaarni@Muru:~/ot_viikko1$ git add tiedostoja/
+mcaarni@Muru:~/ot_viikko1$ git commit -m "uusi kansio"
+[master 0231fca] uusi kansio
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 tiedostoja/file1
+ create mode 100644 tiedostoja/file2
+ create mode 100644 tiedostoja/file3
+mcaarni@Muru:~/ot_viikko1$ cd tiedostoja/
+mcaarni@Muru:~/ot_viikko1/tiedostoja$ nano file1
+mcaarni@Muru:~/ot_viikko1/tiedostoja$ rm file2
+mcaarni@Muru:~/ot_viikko1/tiedostoja$ cd ..
+mcaarni@Muru:~/ot_viikko1$ git restore tiedostoja/
+mcaarni@Muru:~/ot_viikko1$ cd tiedostoja/
+mcaarni@Muru:~/ot_viikko1/tiedostoja$ ls
+file1  file2  file3
+mcaarni@Muru:~/ot_viikko1/tiedostoja$ nano file3
+mcaarni@Muru:~/ot_viikko1/tiedostoja$ git add file3
+mcaarni@Muru:~/ot_viikko1/tiedostoja$ git restore --staged file3
+mcaarni@Muru:~/ot_viikko1/tiedostoja$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file3
+
+no changes added to commit (use "git add" and/or "git commit -a")
+mcaarni@Muru:~/ot_viikko1/tiedostoja$ git restore file3
+mcaarni@Muru:~/ot_viikko1/tiedostoja$ git status
+On branch master
+nothing to commit, working tree clean
+mcaarni@Muru:~/ot_viikko1/tiedostoja$ rm file1
+mcaarni@Muru:~/ot_viikko1/tiedostoja$ mv file2 file22
+mcaarni@Muru:~/ot_viikko1/tiedostoja$ ls
+file22  file3
+mcaarni@Muru:~/ot_viikko1/tiedostoja$ cd
+mcaarni@Muru:~$ cd ot_viikko1/
+mcaarni@Muru:~/ot_viikko1$ git add tiedostoja/
+mcaarni@Muru:~/ot_viikko1$ git commit -m "Ekoja harjoitteluja"
+[master 8f0ea66] Ekoja harjoitteluja
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 tiedostoja/file2
+ rename tiedostoja/{file1 => file22} (100%)
+mcaarni@Muru:~/ot_viikko1$ git log --stat | cat
+commit 8f0ea66986de37b6e098ae90680fe0a715111a10
+Author: Aarni <aarnimanninen7@gmail.com>
+Date:   Tue Nov 3 12:14:01 2020 +0200
+
+    Ekoja harjoitteluja
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 0231fcaa8b89adf433a5b1ad83949bc9ddc24d2d
+Author: Aarni <aarnimanninen7@gmail.com>
+Date:   Tue Nov 3 12:09:32 2020 +0200
+
+    uusi kansio
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit afd95f7a6ef6375a7c12b96d3e656a93eebc8d97
+Author: Aarni <aarnimanninen7@gmail.com>
+Date:   Tue Nov 3 12:01:59 2020 +0200
+
+    lisää muutoksia tiedostoihin
+
+ eka.txt    | 7 +++++--
+ kolmas.txt | 3 +++
+ 2 files changed, 8 insertions(+), 2 deletions(-)
+
+commit 17015ee536e4dcf33c24ca14fbd428c0e51ce691
+Author: Aarni <aarnimanninen7@gmail.com>
+Date:   Tue Nov 3 11:59:29 2020 +0200
+
+    nimen muutos2
+
+ tiedosto.txt | 4 ----
+ 1 file changed, 4 deletions(-)
+
+commit 8541af7d97305e3a42cacb6f61f726a96c95c721
+Author: Aarni <aarnimanninen7@gmail.com>
+Date:   Tue Nov 3 11:59:11 2020 +0200
+
+    nimen muutos
+
+ eka.txt | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit eb5e3ee528d50d09598fd4dec0af6fbe2b6e587c
+Author: Aarni <aarnimanninen7@gmail.com>
+Date:   Tue Nov 3 11:57:20 2020 +0200
+
+    toisen poisto
+
+ toinen.txt | 4 ----
+ 1 file changed, 4 deletions(-)
+
+commit b15294ad1f508ff6a481f5de5d2e273770c0e1fe
+Author: Aarni <aarnimanninen7@gmail.com>
+Date:   Sun Nov 1 19:15:56 2020 +0200
+
+    Uusi kansio
+
+ stuff/neljas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ba0a4cc9fdab822b61c63079247c4a465b4fbc9c
+Author: Aarni <aarnimanninen7@gmail.com>
+Date:   Sun Nov 1 19:14:04 2020 +0200
+
+    Toisen ja Kolmannen muutokset
+
+ kolmas.txt | 5 +++++
+ toinen.txt | 4 ++++
+ 2 files changed, 9 insertions(+)
+
+commit 8e9fe80978c0c42ecbf7187d635ab4f689612946
+Author: Aarni <aarnimanninen7@gmail.com>
+Date:   Sun Nov 1 19:12:25 2020 +0200
+
+    kolmas committaus
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 2ccb86d2fb19c459be1339967f26ca2fc625b64f
+Author: Aarni <aarnimanninen7@gmail.com>
+Date:   Sun Nov 1 17:56:16 2020 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 4 ++++
+ toinen.txt   | 0
+ 2 files changed, 4 insertions(+)
+
+commit 1b8e3204c6ce15f624b0ddd1609b59a1f408e963
+Author: Aarni <aarnimanninen7@gmail.com>
+Date:   Sun Nov 1 17:52:25 2020 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
