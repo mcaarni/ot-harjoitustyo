@@ -5,4 +5,4 @@
 Minulle tuli muutamia *ongelmia* komennon **ssh-add** kanssa, 
 mutta ongelma saatiin korjattua.
 
-[gitlog.txt](https://github.com/mcaarni/ot-harjoitustyo/viikko1/gitlog.txt)
+[gitlog.txt](https://github.com/mcaarni/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
