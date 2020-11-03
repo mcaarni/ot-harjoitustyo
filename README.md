@@ -5,4 +5,4 @@
 Minulle tuli muutamia *ongelmia* komennon **ssh-add** kanssa, 
 mutta ongelma saatiin korjattua.
 
-[gitlog.txt](laskarit/viikko1/gitlog.txt)
+[gitlog.txt](laskarit/'viikko 1'/gitlog.txt)
