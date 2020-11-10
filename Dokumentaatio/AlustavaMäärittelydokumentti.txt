@@ -1,0 +1,4 @@
+- Harjoitustyöni on alustavasti perus funktio laskin
+- Sillä täytyy pystyä laskemaan yhteen-, vähennys-, kerto- ja jakolaskuja
+- Sulkujen tulee toimia kuten normaaleissa laskutoimituksissa
+- Laskimella täytyy pystyä laskemaan potenssi ja neliöjuuri
