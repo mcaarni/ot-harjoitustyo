@@ -1,0 +1,7 @@
+26.11.
+
+Sain viimeinkin aloitettua työtäni edes vähän kiitoksia pajaohjauksesta saatujen neuvojen. Teknisten ongelmien määrä kurssin aikana on ollut aika suuri mikä on selkeästi hidastanut työni alkua.
+
+1.12.
+
+aloitettua aamupäivällä javafx:n graafista käyttöliittymää, mutta paljon työtä on vielä jäljellä. Sain tehtyä numeroruudukon, sekä osan muista tarvittavista napeista.
