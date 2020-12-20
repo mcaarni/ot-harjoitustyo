@@ -1,0 +1,37 @@
+Minulla tuli kurssin ja projektin aikana lukuisia ongelmia, mistä ei miltei pajaohjauksenkaan kanssa meinannut tulla mitään (onneksi sain useimmat ongelmat ratkaistua siellä tai itse)
+
+1. Oikeudet Ubuntussa Windows WSL:ssä
+
+Tämä on ensimmäinen ongelma minkä kohtasin kurssilla ja yksi joka ei vieläkään ole korjautunut. Jos lisään WSL Ubuntun kansioihin minkään tiedoston tai kansion jota ei luotu WSL:llä niin tiedostolla/kansiolla ei ole mitään oikeiuksia. En pysty avaamaan kansioita WSL:n sisällä tai antamaan kansion alikansioille ja- tiedostoille oikeiuksia, vaan minun täytyy antaa erikseen jokaiselle kansiolle oikeudet jotta voin mennä niiden sisälle. Jos haluan lisätä Gittiin mitään WSL:n ulkopuolella tehtyä tai tuotua, niin minun täytyy antaa erikseen jokaiselle halutulle kansiolle ja tiedostolle oikeudet, jossa usein kestää hyvin kauan.
+
+2. Netbeansin ja Javafx:n toimimiseen saaminen
+
+Ehkä suurin syy työni venymiseen oli tämä. Se, että sain Netbeansin (tai tässä tapauksessa TMCBeansin, koska Netbeans 12 ei vieläkään toiminut kunnolla), JavaFX:n ja FXML:n toimimaan niin kuin ohjeistuksissa tai Youtuben ohjeistus videoissa oli todella ison työmaan takana. Seurasin kurssisivun ohjeita tarkasti, mutta nämä työkalut eivät ikinä toimineet niin kuin halusin. Joko Maven ei toiminut kunnolla, Netbeans ei löytänyt javafx:ää tai Scenebuilder ja FXML ei integroitunut Netbeansiin ja importit eivät toimineet.
+
+Sain ongelman hoidettua katsomalla useita viedoita ja lopulta asentamalla javafx:n ja FXML:n lisäämällä javaFX kirjaston manuaalisesti Netbeans projektiini, ohjaamalla projektin kirjaston asennus sijaintiin.
+
+Myönnän, että heitin pyyhkeen mileti kehään tämän takia.
+
+3. Pääluokka ei pystynyt avaamaan ohjelman graafistakäyttöliittymää
+
+Yksinkertaisesti (vaikka argumentit oli oikeat pääluokassa) ohjelma kaatui aina, kun sen yritti aloittaa ja valitti puuttuvista controllereista. Katsomalla muutaman videon sain korjattua ongelmaa lisäämällä projektin "Run" osioon muutaman argumentin, jotka ohjasivat edellä mainitun javaFX:n kirjastoihin.
+
+Ohjelma ei vieläkään toiminut joten kävin pajaohjauksessa kysymässä. Parin tunnin jälkeen selvitimme, että Scenebuilderissä täytyi ruksittaa yksi laatikko.
+
+4. JUnit testit eivät toimi
+
+Tähän en ehtinyt käydä pajaohjauksessa eikä kurssisivun ohjeet tai Youtube videot auttaneet. En tiedä mikä ongelma on, mutta testini eivät yksinkertaisesti toimi. Ne eivät onnistu tai epäonnistu, vaan väittävät, että yhtään testiä ei suoritettu, vaikka testejä löytyy testiluokasta.
+
+5. En pysty luomaan .jar versiota ohjelmasta
+
+Suoritan WSL:ssä komennon 'mvn package' ja saan seuraavan viestin
+
+Failed to execute goal org.apache.maven.plugins:maven-jar-plugin:2.4:jar (default-jar) on project LaskinFx: Error assembling JAR: Problem creating jar: /home/mcaarni/ot-harjoitustyo/LaskinFx/target/classes/.netbeans_automatic_build (Permission denied) -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+
+Minulla ei ole mitään tietoa miten korjaisin ongelman, enkä tämän takia voi testata ohjelmaa koulun koneella tai WSL:ssä. Olen pahoillani tästä puutteesta.

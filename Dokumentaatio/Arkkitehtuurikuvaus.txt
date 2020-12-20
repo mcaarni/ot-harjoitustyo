@@ -1,0 +1,17 @@
+Ohjelma muodostuu
+
+- Pääluokasta
+- 2:sta luokasta
+- Testiluokasta
+- FXML-tiedostosta (Laskimen graafinen esitys)
+- CSS-style luokasta
+
+Pääluokka "App" sisältää tarvittavat toimenpiteet ohjelman aloittamiseen kuten Scenen ja Stagen luonnin. App luokka lataa myöskin FXML ja CSS tiedot ohjelman toimintaan.
+
+Luokka "PrimaryController" lataa ensiksi FXML-tiedoston määrittelevät napit ja toiminnot. Sen jälkeen luokka määrittelee mitä tapahtuu minkäkin napin painalluksesta. Jos käyttäjä painaa equals niin ohjelma luokka kutsuu luokkaa "Laskenta".
+
+Laskenta suorittaa itse laskutoimituksen. PrimaryController antaa luokalle numeron joka viittaa tiettyyn operaatioon sekä ensimmäisen ja toisen arvon. Näiden avulla luokan metodi Lasku määrittää laskutoimituksen ja palauttaa sen pohjalta vastauksen. Luokassa on myös metodi onkoSisaltoa joka tarkistaa, että onko tekstikenttä tyhjä vai ei. Jos kenttä ei ole tyhjä niin PrimaryController voi poistaa merkin.
+
+FXML tiedosto "primary" sisältää laskimen graafisen esityksen ja siihen liittyvät napit, fieldit, panet jne. Laskin saa kustomoidun ulkoasun tiedostolta "tyyli" joka tekee laskimen käyttöliittymästä mielyttävämmän näköisen.
+
+Luokka "LaskentaTest" testaa, että luokassa Laskenta olevat metodit toimivat oikein, ettei asiakkaan tarvitse lähteä tarkistamaan ja testaamaan ohjelman toimivuutta.

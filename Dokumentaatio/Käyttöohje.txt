@@ -1,0 +1,10 @@
+Laskin toimii lähes täysin samalla tavalla kuin normaali nelilaskin:
+1. Numeroi ensimmäinen haluttu arvo.
+2. Klikkaa minkä operaation haluat suorittaa (yhteen-, vähennys-, kertolasku jne.)
+3. Numeroi toinen haluttu arvo.
+4. Klikkaa yhtäsuuri merkkiä.
+5. Jos haluat tehdä uuden laskun niin klikkaa AC nappia ja aloita uudelleen kohdasta 1.
+
+Jos haluat laskea juuren niin laita ensimmäiseksi arvoksi luku mistä juuri halutaan ottaa ja toiseksi arvoksi haluttu juuri.
+
+Jos numeroit väärän luvun, niin paina C nappia niin saat poistettua viimeisimmäin merkin.

@@ -1,0 +1,30 @@
+26.11.
+
+Sain viimeinkin aloitettua työtäni edes vähän kiitoksia pajaohjauksesta saatujen neuvojen. Teknisten ongelmien määrä kurssin aikana on ollut aika suuri mikä on selkeästi hidastanut työni alkua.
+
+1.12.
+
+aloitettua aamupäivällä javafx:n graafista käyttöliittymää, mutta paljon työtä on vielä jäljellä. Sain tehtyä numeroruudukon, sekä osan muista tarvittavista napeista.
+
+16.12.
+
+Aloitin graafisenkäyttöliittymän tekemisen uudestaan. Sain tehtyä ne kolmessa tunnissa 
+Eli primary.fxml ja tyyli.css tuli lähes valmiiksi.
+
+17.12.
+
+Sain aloitettua PrimaryController.java sekä App.java ohjelmointi osuutta ja viimeisteltyä primary.fxml:n ja tyyli.css:n. Käytin kaksi tuntia aikaa tänään.
+
+18.12.
+
+Sain ohjelmani päälle ja luotua uuden luokan Laskenta.java laskimen toiminnalle kiitoksia paja ohjauksen. Sain ohjelman lähes valmiiksi tänään ja käytin siihen aikaa 4-5 tuntia.
+
+19.12.
+
+Sain viimeisteltyä ohjelmointiosuuden sekä aloitettua testien tekemisen luokassa LaskentaTest.java ja tein sitä 4 tuntia.
+
+20.12.
+
+Sain tänään viimeisteltyä viimeiset testit ja testattua ohjelman yliopiston koneella, sekä tehtyä viimeisiä viilauksia ohjelmiin. Tein hommia n. 6-7 tuntia.
+
+Käytin työhön yhteensä aikaa n. 20 tuntia

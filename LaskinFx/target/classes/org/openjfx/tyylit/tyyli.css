@@ -25,3 +25,14 @@ and open the template in the editor.
     -fx-text-fill: white;
     -fx-font-size: 18;
 }
+
+.button2:pressed{
+    -fx-background-color: #2C2B2B;
+    -fx-border-widht: 20;
+}
+
+.text-field{
+    -fx-background-color: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+}

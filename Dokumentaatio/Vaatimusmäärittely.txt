@@ -1,0 +1,19 @@
+- Harjoitustyöni on alustavasti perus funktio laskin
+- Sillä täytyy pystyä laskemaan yhteen-, vähennys-, kerto- ja jakolaskuja
+- Sulkujen tulee toimia kuten normaaleissa laskutoimituksissa
+- Laskimella täytyy pystyä laskemaan potenssi ja neliöjuuri
+
+Lopullinen ohjelma:
+
+-Laskin on vähän normaalia monimutkaisempin nelilaskin
+-Laskimella voi laskea yhteen-, vähennys-, kerto- ja jakolaskuja
+-Laskimella voi laskea myös potenssi- sekä juurilaskuja
+-Siihen voi laittaa sekä kokonaislukuja, että desimaaleja
+-Luvut voivat mennä negatiivisiksi
+-Käyttöliittymä on mielestäni aika hyvän näköinen
+
+Hyviä ominaisuuksia tulevaisuudessa:
+
+-Lisää operandeja kuten logaritmit, sulut, cosini, sini, tangentti jne.
+-Mahdollisuus tehdä pitkiä laskuja useilla operandeilla, kunnes käyttäjä painaa yhtäsuurimerkkiä.
+-Olisi hyvä keksiä tapa miten desimaaleja voi rajoittaa
