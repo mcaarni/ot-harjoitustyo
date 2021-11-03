@@ -1,5 +1,7 @@
 # Ohjelmistotekniikka, harjoitustyö
 
+virhe
+
 ## Tehtävät
 
 ### **Viikko 1**
