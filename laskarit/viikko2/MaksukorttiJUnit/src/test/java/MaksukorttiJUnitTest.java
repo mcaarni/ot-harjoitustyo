@@ -3,12 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
  */
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 /**
  *
@@ -18,51 +18,35 @@ public class MaksukorttiJUnitTest {
 
     MaksukorttiJUnit kortti;
 
+
+
     @Before
     public void setUp() {
         kortti = new MaksukorttiJUnit(10);
     }
 
     @Test
-    public void hello() {
-    }
-
-    @Test
     public void konstruktoriAsettaaSaldonOikein() {
-        MaksukorttiJUnit kortti = new MaksukorttiJUnit(10);
-
-        String vastaus = kortti.toString();
-
-        assertEquals("Kortilla on rahaa 10.0 euroa", vastaus);
+        assertEquals("Kortilla on rahaa 10.0 euroa", kortti.toString());
     }
 
     @Test
     public void syoEdullisestiVahentaaSaldoaOikein() {
-        MaksukorttiJUnit kortti = new MaksukorttiJUnit(10);
-
         kortti.syoEdullisesti();
-
         assertEquals("Kortilla on rahaa 7.5 euroa", kortti.toString());
     }
 
     @Test
     public void syoMaukkaastiVahentaaSaldoaOikein() {
-        MaksukorttiJUnit kortti = new MaksukorttiJUnit(10);
-
         kortti.syoMaukkaasti();
-
         assertEquals("Kortilla on rahaa 6.0 euroa", kortti.toString());
     }
 
     @Test
     public void syoEdullisestiEiVieSaldoaNegatiiviseksi() {
-        MaksukorttiJUnit kortti = new MaksukorttiJUnit(10);
-
         kortti.syoMaukkaasti();
         kortti.syoMaukkaasti();
-        // nyt kortin saldo on 2
         kortti.syoEdullisesti();
-
         assertEquals("Kortilla on rahaa 2.0 euroa", kortti.toString());
     }
 
@@ -115,10 +99,6 @@ public class MaksukorttiJUnitTest {
 
     @AfterAll
     public static void tearDownClass() {
-    }
-
-    @BeforeEach
-    public void setUp() {
     }
 
     @AfterEach
