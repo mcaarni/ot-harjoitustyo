@@ -92,17 +92,4 @@ public class MaksukorttiJUnitTest {
 
     public MaksukorttiJUnitTest() {
     }
-
-    @BeforeAll
-    public static void setUpClass() {
-    }
-
-    @AfterAll
-    public static void tearDownClass() {
-    }
-
-    @AfterEach
-    public void tearDown() {
-    }
-
 }
