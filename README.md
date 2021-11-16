@@ -1,6 +1,6 @@
 # Ohjelmistotekniikka, harjoitustyö
 
-virhe
+Harjoitus repositio Ohjelmistotekniikka 2021 syksy-kurssille.
 
 ## Tehtävät
 
