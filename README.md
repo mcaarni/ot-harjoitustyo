@@ -18,6 +18,14 @@ Harjoitus repositio Ohjelmistotekniikka 2021 syksy-kurssille.
 
 [Kassapäätteen testijakauma](laskarit/viikko2/Ss3.png)
 
+### **Viikko 3**
+
+[1. tehtävä](laskarit/viikko3/Ss1.png)
+
+[2. tehtävä](laskarit/viikko3/Ss2.png)
+
+[3. tehtävä](laskarit/viikko3/Ss3.png)
+
 
 ## Dokumentaatio
 
