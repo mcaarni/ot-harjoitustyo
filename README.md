@@ -2,7 +2,7 @@
 
 Harjoitus repositio Ohjelmistotekniikka 2021 syksy-kurssille.
 
-## Tehtävät
+## Laskarit
 
 ### **Viikko 1**
 
@@ -30,3 +30,7 @@ Harjoitus repositio Ohjelmistotekniikka 2021 syksy-kurssille.
 ## Dokumentaatio
 
 [Vaatimusmäärittely](Dokumentit/määrittelydokumentti.txt)
+
+[Tuntukirjanpito](Dokumentit/tuntikirjanpito.txt)
+
+[Arkkitehtuuri](Dokumentit/arkkitehtuuri.md)
