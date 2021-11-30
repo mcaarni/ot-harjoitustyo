@@ -1,0 +1,10 @@
+Sovelluksen vaatimusmäärittely
+
+Sovelluksen idea
+
+Sovelluksen tarkoitus on olla klassinen matopeli. Matoa pystyy liikuttamaan 
+ylös, alas, oikealle sekä vasemmalle ja se voi törmätä seiniin sekä 
+itseensä lopettaen täden pelin. Nappeja ilmestyy satunnaisesti ympäri 
+tasoa aina kun edellinen on syöty madolla. Ajastin seuraa kuinka pitkään 
+pelaaja on pelannut peliä ja pisteet seuraa montako nappia mato on syönyt.
+Kun peli on loppunut pelaajalle ilmestyy "Game Over" ruutu ja pisteet/aika.

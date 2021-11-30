@@ -1,0 +1,18 @@
+22.11.
+klo 13-14
+Mietin projektin idean ja lähdin tutkimaan kuinka voisi tehdä klassisen
+matopelin.
+
+23.11.
+klo 16-18
+Loin ohjelman pohjan sekä aloittelin määrittelydokumenttia.
+
+30.11.
+klo 12-21
+Olen saanut ohjelmaan paljon lisäystä. Sain tehtyä hyvin pohjaa, satunnaisesti 
+ilmestyvän napin, ohjattavan madon sekä tunnistuksen madon törmäyksiin. 
+Sain aloiteltua testejä, mutta en vielä ole saanut tehtyä hirveän hyviä 
+testejä. Jacoco toimii hyvin. Parantelin määrittelydokumenttia ja loin 
+alustavan version arkkitehtuuri.md tiedostosta.
+
+Projektiin yhteensä käytetty aika: 12 tuntia
