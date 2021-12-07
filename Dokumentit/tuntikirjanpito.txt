@@ -15,4 +15,10 @@ Sain aloiteltua testejä, mutta en vielä ole saanut tehtyä hirveän hyviä
 testejä. Jacoco toimii hyvin. Parantelin määrittelydokumenttia ja loin 
 alustavan version arkkitehtuuri.md tiedostosta.
 
+6.12.
+klo 21-23
+Lisäsin ohjelmaan Game Over-ruudun ja namin voi nyt ottaa ja mato kasvaa 
+pituudessa ja nami vaihtaa paikkaa.
+
 Projektiin yhteensä käytetty aika: 12 tuntia
+

@@ -46,24 +46,26 @@ public class Paneeli extends JPanel implements ActionListener {
     }
 
     public void piirra(Graphics g) {
-
-        for (int i = 0; i < SCREEN_HEIGHT / UNIT_SIZE; i++) {
-            g.drawLine(i * UNIT_SIZE, 0, i * UNIT_SIZE, SCREEN_HEIGHT);
-            g.drawLine(0, i * UNIT_SIZE, SCREEN_WIDTH, i * UNIT_SIZE);
-        }
-        g.setColor(Color.red);
-        g.fillOval(namiX, namiY, UNIT_SIZE, UNIT_SIZE);
-
-        for (int i = 0; i < osat; i++) {
-            if (i == 0) {
-                g.setColor(Color.green);
-                g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
-            } else {
-                g.setColor(new Color(45, 180, 0));
-                g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
+        if (liikkuu) {
+            for (int i = 0; i < SCREEN_HEIGHT / UNIT_SIZE; i++) {
+                g.drawLine(i * UNIT_SIZE, 0, i * UNIT_SIZE, SCREEN_HEIGHT);
+                g.drawLine(0, i * UNIT_SIZE, SCREEN_WIDTH, i * UNIT_SIZE);
             }
-        }
+            g.setColor(Color.red);
+            g.fillOval(namiX, namiY, UNIT_SIZE, UNIT_SIZE);
 
+            for (int i = 0; i < osat; i++) {
+                if (i == 0) {
+                    g.setColor(Color.green);
+                    g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
+                } else {
+                    g.setColor(new Color(45, 180, 0));
+                    g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
+                }
+            }
+        } else {
+            gameOver(g);
+        }
     }
 
     public void uusiNami() {
@@ -95,8 +97,12 @@ public class Paneeli extends JPanel implements ActionListener {
 
     }
 
-    public void onkoNami() {
-
+    public void nappaaNami() {
+        if ((x[0] == namiX) && (y[0] == namiY)) {
+            osat++;
+            montaSyoty++;
+            uusiNami();
+        }
     }
 
     public void onkoTormays() {
@@ -131,14 +137,17 @@ public class Paneeli extends JPanel implements ActionListener {
     }
 
     public void gameOver(Graphics g) {
-
+g.setColor(Color.red);
+g.setFont(new Font("Ink Free", Font.BOLD, 75));
+FontMetrics m = getFontMetrics(g.getFont());
+g.drawString("Game Over", (SCREEN_WIDTH - m.stringWidth("Game Over"))/2, SCREEN_HEIGHT/2);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         if (liikkuu) {
             liiku();
-            onkoNami();
+            nappaaNami();
             onkoTormays();
         }
         repaint();
