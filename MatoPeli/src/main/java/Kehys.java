@@ -1,5 +1,5 @@
 
-import javax.swing.JFrame;
+/*import javax.swing.JFrame;
 
 public class Kehys extends JFrame {
     
@@ -14,4 +14,4 @@ public class Kehys extends JFrame {
         this.setLocationRelativeTo(null);
     }
     
-}
+}*/

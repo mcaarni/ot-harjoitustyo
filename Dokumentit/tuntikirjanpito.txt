@@ -20,5 +20,9 @@ klo 21-23
 Lisäsin ohjelmaan Game Over-ruudun ja namin voi nyt ottaa ja mato kasvaa 
 pituudessa ja nami vaihtaa paikkaa.
 
-Projektiin yhteensä käytetty aika: 12 tuntia
+14.12.
+klo 17-18
 
+Tein vielä lisäyksiä ohjelmaan ja muokkasin myös ohjelman paketteja paremmaksi.
+
+Projektiin käytetty aika yhteensä: 15 h

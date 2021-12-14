@@ -1,5 +1,5 @@
 
-import java.awt.*;
+/*import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.util.Random;
@@ -9,7 +9,7 @@ public class Paneeli extends JPanel implements ActionListener {
 
     static final int SCREEN_WIDTH = 600;
     static final int SCREEN_HEIGHT = 600;
-    static final int UNIT_SIZE = 20;
+    static final int UNIT_SIZE = 25;
     static final int GAME_UNITS = (SCREEN_WIDTH * SCREEN_HEIGHT) / UNIT_SIZE;
     static final int DELAY = 75;
     final int x[] = new int[GAME_UNITS];
@@ -47,10 +47,7 @@ public class Paneeli extends JPanel implements ActionListener {
 
     public void piirra(Graphics g) {
         if (liikkuu) {
-            for (int i = 0; i < SCREEN_HEIGHT / UNIT_SIZE; i++) {
-                g.drawLine(i * UNIT_SIZE, 0, i * UNIT_SIZE, SCREEN_HEIGHT);
-                g.drawLine(0, i * UNIT_SIZE, SCREEN_WIDTH, i * UNIT_SIZE);
-            }
+
             g.setColor(Color.red);
             g.fillOval(namiX, namiY, UNIT_SIZE, UNIT_SIZE);
 
@@ -63,6 +60,10 @@ public class Paneeli extends JPanel implements ActionListener {
                     g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
                 }
             }
+            g.setColor(Color.white);
+            g.setFont(new Font("Ink Free", Font.BOLD, 40));
+            FontMetrics m = getFontMetrics(g.getFont());
+            g.drawString("Pisteet: " + montaSyoty, (SCREEN_WIDTH - m.stringWidth("Pisteet: " + montaSyoty)) / 2, g.getFont().getSize());
         } else {
             gameOver(g);
         }
@@ -137,10 +138,15 @@ public class Paneeli extends JPanel implements ActionListener {
     }
 
     public void gameOver(Graphics g) {
-g.setColor(Color.red);
-g.setFont(new Font("Ink Free", Font.BOLD, 75));
-FontMetrics m = getFontMetrics(g.getFont());
-g.drawString("Game Over", (SCREEN_WIDTH - m.stringWidth("Game Over"))/2, SCREEN_HEIGHT/2);
+        g.setColor(Color.white);
+        g.setFont(new Font("Ink Free", Font.BOLD, 40));
+        FontMetrics m1 = getFontMetrics(g.getFont());
+        g.drawString("Pisteet: " + montaSyoty, (SCREEN_WIDTH - m1.stringWidth("Pisteet: " + montaSyoty)) / 2, g.getFont().getSize());
+
+        g.setColor(Color.red);
+        g.setFont(new Font("Ink Free", Font.BOLD, 75));
+        FontMetrics m2 = getFontMetrics(g.getFont());
+        g.drawString("Game Over", (SCREEN_WIDTH - m2.stringWidth("Game Over")) / 2, SCREEN_HEIGHT / 2);
     }
 
     @Override
@@ -178,8 +184,11 @@ g.drawString("Game Over", (SCREEN_WIDTH - m.stringWidth("Game Over"))/2, SCREEN_
                         suunta = 'D';
                     }
                     break;
+                case KeyEvent.VK_R:
+                    aloitaPeli();
+                    break;
             }
         }
     }
 
-}
+}*/

@@ -7,10 +7,10 @@
  *
  * @author aarni
  */
-public class MatoPeli {
+/*public class MatoPeli {
 
     public static void main(String[] args) {
         Kehys k = new Kehys();
     }
 
-}
+}*/
