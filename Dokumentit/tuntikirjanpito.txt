@@ -35,4 +35,4 @@ klo 12-21
 
 Viimeiset lisäykset, dokumenttien viimeistely ja testien lopullinen lisääminen.
 
-Projektiin käytetty aika yhteensä: 27 h
+Projektiin käytetty aika yhteensä: 26 h
