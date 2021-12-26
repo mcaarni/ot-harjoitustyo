@@ -26,6 +26,14 @@ Harjoitus repositio Ohjelmistotekniikka 2021 syksy-kurssille.
 
 [3. tehtävä](laskarit/viikko3/Ss3.png)
 
+## Käyttöohje
+
+Kun ohjelma on ladattu sen voi suorittaa comennolla "mvn clean".
+Pelin loppuessa ohjelman voi sulkea ja avata uudelleen samalla komennolla.
+Matoa ohjataan nuolinäppäimillä.
+
+Pelin idea on kerätä madolla nameja jotka jatkuvasti pidentää matoa.
+Madon täytyy välttää seiniä sekä omaa kehoaan, muuten peli on ohi.
 
 ## Dokumentaatio
 
