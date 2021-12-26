@@ -31,7 +31,7 @@ klo 11-13
 Yritin muuttaa ohjelman luokkarakennetta
 
 26.12.
-klo 12-22
+klo 12-21
 
 Viimeiset lisäykset, dokumenttien viimeistely ja testien lopullinen lisääminen.
 
