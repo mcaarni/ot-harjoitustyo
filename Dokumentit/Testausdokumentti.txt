@@ -1,3 +1,6 @@
 Ohjelmaa on hieman haastava testata, koska testattavat osiot ovat aika rajattuja. 
 Pyrin testaamaan mm. törmäysten toimimista seinien kohdalla sekä matoon itseensä.
 Lisäksi testasin namin toimivuutta ja madon kasvua.
+
+Ohjelman testit voi suorittaa komennolla "mvn test"
+ja jacoco version voi suorittaa komennolla "mvn test jacoco:report"
