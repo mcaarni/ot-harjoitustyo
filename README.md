@@ -28,15 +28,15 @@ Harjoitus repositio Ohjelmistotekniikka 2021 syksy-kurssille.
 
 ## Käyttöohje
 
-Kun ohjelma on ladattu sen voi suorittaa comennolla "mvn clean compile exec:java".
+Kun ohjelma on ladattu sen voi suorittaa comennolla 'mvn clean compile exec:java'.
 Pelin loppuessa ohjelman voi sulkea ja avata uudelleen samalla komennolla.
 Matoa ohjataan nuolinäppäimillä.
 
 Pelin idea on kerätä madolla nameja jotka jatkuvasti pidentää matoa.
 Madon täytyy välttää seiniä sekä omaa kehoaan, muuten peli on ohi.
 
-Ohjelman testit voi suorittaa komennolla "mvn test".
-ja jacoco version voi suorittaa komennolla "mvn test jacoco:report".
+Ohjelman testit voi suorittaa komennolla 'mvn test'.
+ja jacoco version voi suorittaa komennolla 'mvn test jacoco:report'.
 
 ## Dokumentaatio
 
