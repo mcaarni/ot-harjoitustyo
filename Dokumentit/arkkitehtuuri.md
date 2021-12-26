@@ -1,1 +1,2 @@
-![luokkakaavio](./kuvat/luokkakaavio.png)
+![luokkakaavio](./kuvat/finalLuokkakaavio.png)
+![Sekvenssikaavio](./kuvat/finalSekvenssikaavio.png)
