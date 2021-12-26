@@ -8,3 +8,11 @@ itseensä lopettaen täden pelin. Nappeja ilmestyy satunnaisesti ympäri
 tasoa aina kun edellinen on syöty madolla. Ajastin seuraa kuinka pitkään 
 pelaaja on pelannut peliä ja pisteet seuraa montako nappia mato on syönyt.
 Kun peli on loppunut pelaajalle ilmestyy "Game Over" ruutu ja pisteet/aika.
+
+Lopullinen toteutus (päivitetty 26.12.2021)
+
+Sovellus toimii lähes kuten suunniteltu. Liikkuminen toimii hyvin, törmäykset 
+tunnistetaan ja lopettaa pelin, nappi vaihtaa paikkaa aina kun mato nappaa 
+sen ja madon pituus sekä pisteet kasvaa. Kun peli loppuu näytölle ilmestyy 
+"Game Over" teksti ja pisteet ilmestyy isommalla tekstillä. Peliaika on 
+ainut asia mitä en implementoinut.

@@ -25,4 +25,14 @@ klo 17-18
 
 Tein vielä lisäyksiä ohjelmaan ja muokkasin myös ohjelman paketteja paremmaksi.
 
-Projektiin käytetty aika yhteensä: 15 h
+25.12.
+klo 11-13
+
+Yritin muuttaa ohjelman luokkarakennetta
+
+26.12.
+klo 12-22
+
+Viimeiset lisäykset, dokumenttien viimeistely ja testien lopullinen lisääminen.
+
+Projektiin käytetty aika yhteensä: 27 h
