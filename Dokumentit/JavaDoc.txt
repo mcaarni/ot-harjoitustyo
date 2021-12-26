@@ -1,0 +1,38 @@
+Paneeli luokan JavaDoc:
+
+aloitaPeli()
+Metodi luo namin ruudulle, varmistaa että mato on liikkessä ja laittaa 
+ohjelman pyörimään DELAY:n määräämällä tavalla.
+
+piirra(Graphics g)
+Metodi luo pääosan käyttäjän näkemästä ruudusta: Madon napattavan namin,
+madon pään sekä sen loppukehon sekä pistelaskurin ruudun yläosaan. Jos
+liikkuu muuttuja onkin false niin metodi ohjaa kontrollin Game Over
+metodiin.
+
+uusiNami()
+Kun vanha nami on syöty, metodi luo uuden namin satunnaiseen paikkaan
+ruudun sisällä.
+
+liiku()
+Metodi määrittää suunnan mihin käärme liikkuu.
+
+nappaaNami()
+Madon saadessa nami kiinni, metodi kasvattaa pisteitä sekä kutsuu
+uusiNami() metodia luomaan uuden namin.
+
+onkoTormays()
+Metodi tarkistaa onko madon pää törmännyt seinään tai itseensä. Tällöin
+madon liike pysähtyy ja muuttuja liikkuu muutetaan falseksi.
+
+gameOver()
+Metodi piirtää pelin loppuessa punaisella ruudulle "Game Over" ja näyttää
+käyttäjän saamat pisteet yläreunassa suurempana kuin pelissä.
+
+actionPerformed(ActionEvent e)
+Metodi suorittaa jatkuvasti tarkistuksia madon liikkeestä, sijainnista
+sekä mahdollisista törmäyksistä.
+
+keyPressed(KeyEvent e)
+Metodi muuttaa madon kulkusuuntaa riippuen käyttäjän napin
+painalluksista.
