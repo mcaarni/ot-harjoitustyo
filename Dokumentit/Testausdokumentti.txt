@@ -1,0 +1,3 @@
+Ohjelmaa on hieman haastava testata, koska testattavat osiot ovat aika rajattuja. 
+Pyrin testaamaan mm. törmäysten toimimista seinien kohdalla sekä matoon itseensä.
+Lisäksi testasin namin toimivuutta ja madon kasvua.
