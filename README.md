@@ -34,3 +34,7 @@ Harjoitus repositio Ohjelmistotekniikka 2021 syksy-kurssille.
 [Tuntukirjanpito](Dokumentit/tuntikirjanpito.txt)
 
 [Arkkitehtuuri](Dokumentit/arkkitehtuuri.md)
+
+[JavaDoc](Dokumentit/JavaDoc.txt)
+
+[Testausdokumentti](Dokumentit/Testausdokumentti.txt)
